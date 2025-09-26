@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Backend Developer Portfolio</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="#hero">Sai Pavan</a>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#mini-projects">Mini Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+          <a
+            href="https://github.com/saipavan-s"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/saipavan-s/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div class="theme-toggle" id="theme-toggle">
+          <i class="fa-solid fa-moon"></i>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero-section">
+        <div class="text">
+          <h2>Hi, I'm Sai Pavan 👋</h2>
+          <p>
+            I'm a <strong>Backend Developer</strong> specializing in building
+            scalable and efficient systems. My expertise lies in
+            <strong
+              >Java, Spring Boot, SQL, and Data Structures & Algorithms</strong
+            >. I enjoy designing APIs, managing databases, and writing clean,
+            maintainable code.
+          </p>
+          <div class="links">
+            <a href="#skills"> <i class="fa-solid fa-code"></i> Skills </a>
+            <a href="#projects">
+              <i class="fa-solid fa-diagram-project"></i> Projects
+            </a>
+            <a href="#contact">
+              <i class="fa-solid fa-envelope"></i> Contact
+            </a>
+          </div>
+        </div>
+        <div class="headshot">
+          <img
+            src="images/hero-headshot.webp"
+            alt="Portrait of Sai Pavan"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+          As a passionate backend developer, I focus on creating robust and
+          scalable applications. With a strong foundation in Java and Spring
+          Boot, I have experience in developing RESTful APIs, optimizing
+          database queries, and ensuring system security. I'm eager to
+          contribute to innovative projects and continue learning new
+          technologies in the field.
+        </p>
+        <a href="resume.pdf" download class="resume-link">
+          <i class="fa-solid fa-file-pdf"></i> Download Resume
+        </a>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="skills-section">
+        <h2>Backend Skills</h2>
+        <div class="text">
+          My core technical stack focuses on backend development, database
+          design, and scalable systems.
+        </div>
+        <div class="cells">
+          <div class="cell">
+            <img src="images/java-logo.png" alt="Java logo" /><span>Java</span>
+          </div>
+          <div class="cell">
+            <img src="images/springboot-logo.png" alt="Spring Boot logo" /><span
+              >Spring Boot</span
+            >
+          </div>
+          <div class="cell">
+            <img src="images/sql-logo.png" alt="SQL logo" /><span>SQL</span>
+          </div>
+          <div class="cell">
+            <img src="images/rest-api-logo.png" alt="REST API logo" /><span
+              >REST APIs</span
+            >
+          </div>
+          <div class="cell">
+            <img src="images/git-logo.png" alt="Git logo" /><span>Git</span>
+          </div>
+          <div class="cell">
+            <img src="images/docker-logo.png" alt="Docker logo" /><span
+              >Docker</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="images/liabary-icon.webp"
+              alt="Library Management System"
+            />
+          </div>
+          <div class="project-info">
+            <h3>Library Management System</h3>
+            <p>Java, Spring Boot, MySQL</p>
+            <p>
+              A backend system for managing books, users, and borrow/return
+              operations. Implemented REST APIs with authentication and
+              relational database design.
+            </p>
+            <a href="https://github.com" target="_blank" class="project-link"
+              ><i class="fa-brands fa-github"></i> View Project</a
+            >
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="images/ride-sharing-icon.webp"
+              alt="Ride-Sharing Application"
+            />
+          </div>
+          <div class="project-info">
+            <h3>Ride-Sharing Application</h3>
+            <p>Java, Spring Boot, PostgreSQL</p>
+            <p>
+              Designed a backend API for riders and drivers. Features include
+              role-based authentication, CRUD operations for ride management,
+              and efficient database queries for matching and routing.
+            </p>
+            <a href="https://github.com" target="_blank" class="project-link"
+              ><i class="fa-brands fa-github"></i> View Project</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- MINI PROJECTS SECTION -->
+      <section id="mini-projects" class="mini-projects-section">
+        <h2>Mini Projects</h2>
+        <div class="mini-projects-container">
+          <div class="mini-project-card">
+            <img src="images/snake-icon.webp" alt="Snake Game" />
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="mini-github-link"
+              ><i class="fa-brands fa-github"></i> View</a
+            >
+            <span class="mini-project-title">Snake Game</span>
+          </div>
+          <div class="mini-project-card">
+            <img src="images/contact_app.webp" alt="Contact App" />
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="mini-github-link"
+              ><i class="fa-brands fa-github"></i> View</a
+            >
+            <span class="mini-project-title">Contact App</span>
+          </div>
+          <div class="mini-project-card">
+            <img src="images/weather_app-icon.webp" alt="Weather App" />
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="mini-github-link"
+              ><i class="fa-brands fa-github"></i> View</a
+            >
+            <span class="mini-project-title">Weather App</span>
+          </div>
+          <div class="mini-project-card">
+            <img src="images/text_editor-icon.webp" alt="Text Editor" />
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="mini-github-link"
+              ><i class="fa-brands fa-github"></i> View</a
+            >
+            <span class="mini-project-title">Text Editor</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION SECTION -->
+      <section id="education" class="education-section">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Ramachandra College of Engineering</h3>
+              <p>Eluru, Andhra Pradesh</p>
+              <p>B.Tech Computer Science Engineering</p>
+              <p>November 2021 - May 2025</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Sri Chaitanya</h3>
+              <p>Eluru, Andhra Pradesh</p>
+              <p>MPC</p>
+              <p>June 2019 - March 2021</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Bhashyam</h3>
+              <p>Eluru, Andhra Pradesh</p>
+              <p>10th Standard</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <div class="group">
+          <div class="text">
+            I'm currently looking for opportunities as a
+            <strong>Backend Developer</strong> in product-based companies. Feel
+            free to reach out to collaborate or discuss opportunities.
+          </div>
+          <form>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Your message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Sai Pavan. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://github.com/saipavan-s" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/saipavan-s/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("mobile-menu");
+      const navLinks = document.getElementById("nav-links");
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      const themeToggle = document.getElementById("theme-toggle");
+      const storedTheme = localStorage.getItem("theme") || "light";
+      if (storedTheme === "dark") {
+        document.body.classList.add("dark");
+        themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+      }
+
+      themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        if (document.body.classList.contains("dark")) {
+          localStorage.setItem("theme", "dark");
+          themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        } else {
+          localStorage.setItem("theme", "light");
+          themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        }
+      });
+    </script>
+  </body>
+</html>
