@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sai Pavan - Backend Developer specializing in Java, Spring Boot, and SQL. Building scalable, reliable systems with clean, maintainable code." />
+    <meta name="keywords" content="Backend Developer, Java, Spring Boot, SQL, REST API, Portfolio, Sai Pavan" />
+    <meta name="author" content="Sai Pavan" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sai Pavan - Backend Developer Portfolio" />
+    <meta property="og:description" content="Backend Developer focused on building scalable, reliable systems with Java, Spring Boot, and SQL." />
+    <meta property="og:type" content="website" />
+    
+    <link rel="stylesheet" href="styles.css" />
+    <title>Backend Developer Portfolio — Sai Pavan</title>
+  </head>
+
+  <body>
+    <!-- Skip link for keyboard users -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- NAVBAR -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="#hero">Sai Pavan</a>
+        </div>
+
+        <button
+          id="mobile-menu"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Toggle navigation menu"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <div class="nav-links" id="nav-links" role="navigation" aria-label="Primary">
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#mini-projects">Mini Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+          <a
+            href="https://github.com/saipavan-s"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Sai Pavan on GitHub"
+          >
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/saipavan-s/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Sai Pavan on LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-pressed="false"
+          aria-label="Toggle dark mode"
+          title="Toggle dark mode"
+        >
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main id="main">
+      <!-- HERO SECTION -->
+      <section id="hero" class="hero-section fade-in" tabindex="-1">
+        <div class="text">
+          <h1>Hi, I'm <span class="accent">Sai Pavan</span> 👋</h1>
+          <p class="lead">
+            Backend Developer focused on building scalable, reliable systems.
+            Skilled in <strong>Java, Spring Boot, SQL</strong> and solving problems
+            with clean, maintainable code.
+          </p>
+          <div class="links">
+            <a href="#skills" class="btn"><i class="fa-solid fa-code" aria-hidden="true"></i> Skills</a>
+            <a href="#projects" class="btn outlined"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Projects</a>
+            <a href="#contact" class="btn"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a>
+          </div>
+        </div>
+
+        <div class="headshot">
+          <img
+            src="images/hero-headshot.webp"
+            alt="Headshot of Sai Pavan"
+            width="350"
+            height="350"
+            loading="eager"
+          />
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+          I build backend systems, RESTful APIs, and data-driven services using
+          Java and Spring Boot. I enjoy designing clear database schemas,
+          optimizing queries, and writing secure, testable code.
+        </p>
+        <a href="resume.pdf" download class="resume-link" aria-label="Download resume (PDF)">
+          <i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Download Resume
+        </a>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Backend Skills</h2>
+        <p class="section-sub">Core stack for building backend systems and APIs.</p>
+        <div class="cells" role="list">
+          <div class="cell" role="listitem">
+            <img src="images/java-logo.png" alt="Java logo" loading="lazy" />
+            <span>Java</span>
+          </div>
+          <div class="cell" role="listitem">
+            <img src="images/springboot-logo.png" alt="Spring Boot logo" loading="lazy" />
+            <span>Spring Boot</span>
+          </div>
+          <div class="cell" role="listitem">
+            <img src="images/sql-logo.png" alt="SQL logo" loading="lazy" />
+            <span>SQL / Relational DBs</span>
+          </div>
+          <div class="cell" role="listitem">
+            <img src="images/rest-api-logo.png" alt="REST API icon" loading="lazy" />
+            <span>REST APIs</span>
+          </div>
+          <div class="cell" role="listitem">
+            <img src="images/git-logo.png" alt="Git logo" loading="lazy" />
+            <span>Git</span>
+          </div>
+          <div class="cell" role="listitem">
+            <img src="images/docker-logo.png" alt="Docker logo" loading="lazy" />
+            <span>Docker</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/liabary-icon.webp" alt="Library management system UI" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Library Management System</h3>
+            <p class="meta">Java · Spring Boot · MySQL</p>
+            <p>
+              Backend APIs for managing books, members, and transactions. Includes role-based authentication,
+              validation and well-structured relational schema.
+            </p>
+            <a href="https://github.com/saipavan-s/library-management" target="_blank" class="project-link" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="images/ride-sharing-icon.webp" alt="Ride-sharing application diagram" loading="lazy" />
+          </div>
+          <div class="project-info">
+            <h3>Ride-Sharing Application</h3>
+            <p class="meta">Java · Spring Boot · PostgreSQL</p>
+            <p>
+              Backend for rider-driver matching, secure role-based auth, and optimized queries for matching & routing.
+            </p>
+            <a href="https://github.com/saipavan-s/ride-sharing" target="_blank" class="project-link" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- MINI PROJECTS -->
+      <section id="mini-projects" class="mini-projects-section" aria-labelledby="mini-heading">
+        <h2 id="mini-heading">Mini Projects</h2>
+        <div class="mini-projects-container">
+          <div class="mini-project-card">
+            <img src="images/snake-icon.webp" alt="Screenshot of Snake Game" loading="lazy" />
+            <a href="https://github.com/saipavan-s/snakegame" target="_blank" class="mini-github-link" rel="noopener noreferrer">View</a>
+            <span class="mini-project-title">Snake Game</span>
+            <span class="mini-tech-tags">Java · Swing</span>
+          </div>
+
+          <div class="mini-project-card">
+            <img src="images/contact_app.webp" alt="Contact App screenshot" loading="lazy" />
+            <a href="https://github.com/saipavan-s/contact-app" target="_blank" class="mini-github-link" rel="noopener noreferrer">View</a>
+            <span class="mini-project-title">Contact App</span>
+            <span class="mini-tech-tags">Java · SQLite</span>
+          </div>
+
+          <div class="mini-project-card">
+            <img src="images/weather_app-icon.webp" alt="Weather App screenshot" loading="lazy" />
+            <a href="https://github.com/saipavan-s/weather-app" target="_blank" class="mini-github-link" rel="noopener noreferrer">View</a>
+            <span class="mini-project-title">Weather App</span>
+            <span class="mini-tech-tags">Java · API</span>
+          </div>
+
+          <div class="mini-project-card">
+            <img src="images/text_editor-icon.webp" alt="Text Editor screenshot" loading="lazy" />
+            <a href="https://github.com/saipavan-s/text-editor" target="_blank" class="mini-github-link" rel="noopener noreferrer">View</a>
+            <span class="mini-project-title">Text Editor</span>
+            <span class="mini-tech-tags">Java · Swing</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="education-section" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <div class="timeline" role="list">
+          <div class="timeline-item" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3>Ramachandra College of Engineering</h3>
+              <p>Eluru, Andhra Pradesh</p>
+              <p>B.Tech — Computer Science Engineering</p>
+              <p class="dates">Nov 2021 — May 2025</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3>Sri Chaitanya</h3>
+              <p>Eluru, Andhra Pradesh</p>
+              <p>MPC</p>
+              <p class="dates">Jun 2019 — Mar 2021</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" role="listitem">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <h3>Bhashyam</h3>
+              <p>Eluru, Andhra Pradesh</p>
+              <p>10th Standard</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <div class="group">
+          <div class="text">
+            I'm open to Backend Developer roles (product-based teams). Let's talk if you'd like to collaborate.
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn">Send Message</button>
+              <div id="form-status" role="status" aria-live="polite" class="form-status"></div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Sai Pavan. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://github.com/saipavan-s" target="_blank" aria-label="GitHub" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/saipavan-s/" target="_blank" aria-label="LinkedIn" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+      </div>
+    </footer>
+
+    <!-- Icons (Font Awesome CDN) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+      // ====== NAV & MOBILE MENU ======
+      const menuToggle = document.getElementById("mobile-menu");
+      const navLinks = document.getElementById("nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+        navLinks.classList.toggle("active");
+      });
+
+      // ====== THEME TOGGLE (with system preference detection) ======
+      const themeToggle = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      // Check for saved theme preference or default to system preference
+      const getInitialTheme = () => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+          return savedTheme;
+        }
+        return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      };
+
+      const setTheme = (theme) => {
+        if (theme === "dark") {
+          body.classList.add("dark");
+          themeToggle.setAttribute("aria-pressed", "true");
+          themeToggle.innerHTML = '<i class="fa-solid fa-sun" aria-hidden="true"></i>';
+        } else {
+          body.classList.remove("dark");
+          themeToggle.setAttribute("aria-pressed", "false");
+          themeToggle.innerHTML = '<i class="fa-solid fa-moon" aria-hidden="true"></i>';
+        }
+        localStorage.setItem("theme", theme);
+      };
+
+      // Initialize theme
+      setTheme(getInitialTheme());
+
+      themeToggle.addEventListener("click", () => {
+        const newTheme = body.classList.contains("dark") ? "light" : "dark";
+        setTheme(newTheme);
+      });
+
+      // ====== ACTIVE NAV LINK (IntersectionObserver) ======
+      const navItems = document.querySelectorAll("nav .nav-links a[href^='#']");
+      const sections = Array.from(navItems).map(a => document.querySelector(a.getAttribute("href")));
+      const observerOptions = {
+        root: null,
+        rootMargin: "-30% 0px -40% 0px",
+        threshold: 0
+      };
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          navItems.forEach(link => {
+            if (link.getAttribute("href").substring(1) === entry.target.id) {
+              if (entry.isIntersecting) {
+                link.classList.add("active");
+              } else {
+                link.classList.remove("active");
+              }
+            }
+          });
+        });
+      }, observerOptions);
+
+      sections.forEach(sec => {
+        if (sec) sectionObserver.observe(sec);
+      });
+
+      // Close mobile menu when clicking a nav link
+      navItems.forEach(link => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          menuToggle.setAttribute("aria-expanded", "false");
+        });
+      });
+
+      // ====== BACK TO TOP BUTTON ======
+      const backToTopBtn = document.getElementById("back-to-top");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 500) {
+          backToTopBtn.classList.add("visible");
+        } else {
+          backToTopBtn.classList.remove("visible");
+        }
+      });
+
+      backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+
+      // ====== FADE IN ANIMATION ON LOAD ======
+      window.addEventListener("load", () => {
+        document.querySelector(".hero-section").classList.add("visible");
+      });
+
+      // ====== CONTACT FORM ======
+      const form = document.getElementById("contact-form");
+      const formStatus = document.getElementById("form-status");
+
+      // IMPORTANT: Add your Formspree endpoint here
+      // Get one free at https://formspree.io/
+      const FORMSPREE_ENDPOINT = ""; // Example: "https://formspree.io/f/xvoeabcd"
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        formStatus.textContent = "";
+        
+        const name = form.name.value.trim();
+        const email = form.email.value.trim();
+        const message = form.message.value.trim();
+
+        // Basic validation
+        if (!name || !email || !message) {
+          formStatus.textContent = "Please fill all required fields.";
+          formStatus.className = "form-status error";
+          return;
+        }
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          formStatus.textContent = "Please enter a valid email address.";
+          formStatus.className = "form-status error";
+          return;
+        }
+
+        // If no endpoint configured, show demo message
+        if (!FORMSPREE_ENDPOINT) {
+          formStatus.textContent = "✓ Message sent (demo mode). Configure Formspree endpoint for real submissions.";
+          formStatus.className = "form-status success";
+          form.reset();
+          return;
+        }
+
+        // Real submission
+        try {
+          formStatus.textContent = "Sending...";
+          formStatus.className = "form-status";
+          
+          const response = await fetch(FORMSPREE_ENDPOINT, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, email, message })
+          });
+
+          if (response.ok) {
+            formStatus.textContent = "✓ Message sent successfully. Thank you!";
+            formStatus.className = "form-status success";
+            form.reset();
+          } else {
+            throw new Error("Network response was not ok");
+          }
+        } catch (err) {
+          formStatus.textContent = "✗ Something went wrong. Please try again later.";
+          formStatus.className = "form-status error";
+          console.error(err);
+        }
+      });
+
+      // ====== YEAR IN FOOTER ======
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
